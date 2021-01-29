@@ -1,22 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
     void Start()
     {
-        
+        OpenSubmenu("Main");
     }
 
     public void StartGame()
     {
-        print("start the game!");
+        SceneManager.LoadScene(1);
     }
 
     public void ExitGame()
     {
-        print("Exit the game!");
+        print("You exited the game!");
+        Application.Quit();
     }
 
     public void OpenSubmenu(string submenu)
