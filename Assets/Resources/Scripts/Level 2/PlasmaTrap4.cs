@@ -46,7 +46,7 @@ public class PlasmaTrap4 : MonoBehaviour
 
         if (shoot)
         {
-            Instantiate(lightbeam, new Vector2(-6.46f, 0), Quaternion.Euler(0, 0, 0));
+            Instantiate(lightbeam, new Vector2(1.54f, 0), Quaternion.Euler(0, 0, 0));
             countdown = 2;
             hide = true;
         }
@@ -64,7 +64,17 @@ public class PlasmaTrap4 : MonoBehaviour
             delay = 2;
         }
 
-        if (clock > 5 && clock < 6) //first trigger
+        if (clock > 9 && clock < 10) //first trigger
+            readyBool = true;
+        if (clock > 13 && clock < 14) //second trigger
+            readyBool = true;
+        if (clock > 37.5 && clock < 39) //third trigger
+            readyBool = true;
+        if (clock > 50 && clock < 51) //fourth trigger
+            readyBool = true;
+        if (clock > 90 && clock < 91) //fifth trigger
+            readyBool = true;
+        if (clock > 94 && clock < 95) //sixth trigger
             readyBool = true;
     }
 }
