@@ -5,17 +5,17 @@ using UnityEngine;
 public class SpikeAnimation1 : MonoBehaviour
 {
     private float speedSlow = 1;
-    private float speedFast = 9;
+    private float speedFast = 11;
     Vector2 originalPosition;
     private float clock = 0;
     public Vector2 lowerOffset;
     public Vector2 dropOffset;
-    private float dropTimer = 2;
+    private float dropTimer = 1.8f;
     public bool dropTimerBool = false;
-    private float resetTimer = 3;
+    private float resetTimer = 1.4f;
     private bool lowerBool = false;
 
-    private float customTimer1 = 6;
+    private float customTimer1 = 4;
     private bool customTimerBool1 = false;
     private float customTimer2 = 4;
     private bool customTimerBool2 = false;
@@ -25,12 +25,12 @@ public class SpikeAnimation1 : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, originalPosition + dropOffset, speedFast * Time.deltaTime);
         resetTimer -= Time.deltaTime;
 
-        if(resetTimer <= 0)
+        if (resetTimer <= 0)
         {
             transform.position = originalPosition;
             dropTimerBool = false;
-            dropTimer = 2;
-            resetTimer = 3;
+            dropTimer = 1.8f;
+            resetTimer = 1.4f;
         }
     }
 
@@ -103,5 +103,11 @@ public class SpikeAnimation1 : MonoBehaviour
             customTimerBool2 = true;
             lowerBool = true;
         }
+
+        if (clock > 90 && clock < 91)   //sixth trigger
+            lowerBool = true;
+
+        if (clock > 96 && clock < 97)   //fourth trigger
+            lowerBool = true;
     }
 }
