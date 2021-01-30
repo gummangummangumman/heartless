@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class RHand : MonoBehaviour
 {
+
+    public GameObject fistHitbox;
+
     private float clock;
     private float raiseSpeed = 4;
     private float resetSpeed = 1.5f;
@@ -23,6 +26,8 @@ public class RHand : MonoBehaviour
 
     void drop()
     {
+        if(transform.childCount == 0)
+            Instantiate(fistHitbox, transform);
         transform.position = Vector3.MoveTowards(transform.position, originalPos + Dropoffset, dropSpeed * Time.deltaTime);
     }
 

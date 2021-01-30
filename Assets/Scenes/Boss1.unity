@@ -577,6 +577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d3acb3f032009647a7bc08bb4bf55a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fistHitbox: {fileID: 3008020468967332556, guid: 28092cce2c5946848bc82fc9e8eac4ef, type: 3}
 --- !u!1001 &605112702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2152,6 +2153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3acaffc2edef6de4c9f3353941033448, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fistHitbox: {fileID: 3008020468967332556, guid: 28092cce2c5946848bc82fc9e8eac4ef, type: 3}
 --- !u!114 &1519496094 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2294662097568097837, guid: 83a5af31d133f2d4e927b791c9426093, type: 3}

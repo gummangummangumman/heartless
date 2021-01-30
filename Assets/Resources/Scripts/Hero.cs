@@ -48,7 +48,7 @@ public class Hero : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.name.Contains("Spike") || other.name.Contains("Projectile") || other.name.Contains("LightBeam"))
+        if (other.name.Contains("Spike") || other.name.Contains("Projectile") || other.name.Contains("LightBeam") || other.name.Contains("FistHitbox"))
             Die();
     }
 
