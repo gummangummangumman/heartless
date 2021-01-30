@@ -4,23 +4,25 @@ using UnityEngine;
 
 public class SpikeAnimation4 : MonoBehaviour
 {
-    private float speedSlow = 1;
-    private float speedFast = 11;
+    private float speedSlow = 2;
+    private float speedFast = 15;
     Vector2 originalPosition;
     private float clock = 0;
     public Vector2 lowerOffset;
     public Vector2 dropOffset;
-    private float dropTimer = 1.8f;
+    private float dropTimer = 1.3f;
     public bool dropTimerBool = false;
     private float resetTimer = 1.4f;
     private bool lowerBool = false;
 
-    private float customTimer1 = 4;
+    private float customTimer1 = 3;
     private bool customTimerBool1 = false;
     private float customTimer2 = 4;
     private bool customTimerBool2 = false;
     private float customTimer3 = 4;
     private bool customTimerBool3 = false;
+    private float customTimer4 = 3;
+    private bool customTimerBool4 = false;
 
 
     void fall()
@@ -32,7 +34,7 @@ public class SpikeAnimation4 : MonoBehaviour
         {
             transform.position = originalPosition;
             dropTimerBool = false;
-            dropTimer = 1.8f;
+            dropTimer = 1.3f;
             resetTimer = 1.4f;
         }
     }
@@ -41,7 +43,7 @@ public class SpikeAnimation4 : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, originalPosition + lowerOffset, speedSlow * Time.deltaTime);
 
-        if (customTimerBool1 == false && customTimerBool2 == false && customTimerBool3 == false)
+        if (customTimerBool1 == false && customTimerBool2 == false && customTimerBool3 == false && customTimerBool4 == false)
             dropTimerBool = true;
         else if (customTimerBool1 == true)
         {
@@ -70,6 +72,15 @@ public class SpikeAnimation4 : MonoBehaviour
                 customTimerBool3 = false;
             }
         }
+        else if (customTimerBool4 == true)
+        {
+            customTimer4 -= Time.deltaTime;
+            if (customTimer4 < 0)
+            {
+                dropTimerBool = true;
+                customTimerBool4 = false;
+            }
+        }
     }
 
     private void Start()
@@ -95,16 +106,25 @@ public class SpikeAnimation4 : MonoBehaviour
 
         clock += Time.deltaTime;
 
-        if (clock > 28 && clock < 29)   //first trigger
+        if (clock > 12 && clock < 13)   //second trigger
+            lowerBool = true;
+
+        if (clock > 21 && clock < 22)   //first trigger
         {
             customTimerBool1 = true;
+            lowerBool = true;
+        }
+
+        if (clock > 29 && clock < 30)   //first trigger
+        {
+            customTimerBool4 = true;
             lowerBool = true;
         }
 
         if (clock > 50 && clock < 51) //second trigger
             lowerBool = true;
 
-        if (clock > 68 && clock < 69)   //third trigger
+        if (clock > 65.9 && clock < 66.9)   //third trigger
         {
             customTimerBool2 = true;
             lowerBool = true;
