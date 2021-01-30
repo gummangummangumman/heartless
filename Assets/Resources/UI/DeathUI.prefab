@@ -130,7 +130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &616263875811171164
 RectTransform:
   m_ObjectHideFlags: 0
@@ -390,9 +390,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 616263875387478498}
-        m_TargetAssemblyTypeName: PauseUI, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 6463472206313250020}
+        m_TargetAssemblyTypeName: DeathUI, Assembly-CSharp
+        m_MethodName: QuitToMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
