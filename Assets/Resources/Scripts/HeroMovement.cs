@@ -8,6 +8,8 @@ public class HeroMovement : MonoBehaviour
     public int playerSpeed;
     public int jumpPower;
 
+    private bool isJumping = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,7 @@ public class HeroMovement : MonoBehaviour
 
     void Jump()
     {
+        isJumping = true;
         GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpPower));
     }
 }
