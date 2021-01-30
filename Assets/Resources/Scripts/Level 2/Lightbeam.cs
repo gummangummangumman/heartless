@@ -10,7 +10,7 @@ public class Lightbeam : MonoBehaviour
     {
         clock += Time.deltaTime;
 
-        if (clock >= 2)
+        if (clock >= 1.2f)
             Destroy(bean);
     }
 }

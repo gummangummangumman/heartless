@@ -66,5 +66,15 @@ public class PlasmaTrap1 : MonoBehaviour
 
         if (clock > 5 && clock < 6) //first trigger
             readyBool = true;
+        if (clock > 17 && clock < 18) //second trigger
+            readyBool = true;
+        if (clock > 30 && clock < 31) //third trigger
+            readyBool = true;
+        if (clock > 57.5 && clock < 59) //fourth trigger
+            readyBool = true;
+        if (clock > 80 && clock < 81) //fifth trigger
+            readyBool = true;
+        if (clock > 100 && clock < 101) //sixth trigger
+            readyBool = true;
     }
 }
