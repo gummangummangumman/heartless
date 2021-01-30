@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5467586, y: 0.50756645}
-  m_AnchoredPosition: {x: -7.1, y: 18.4}
-  m_SizeDelta: {x: 149, y: 84.3}
+  m_AnchoredPosition: {x: -7.1, y: -0.5}
+  m_SizeDelta: {x: 149, y: 160.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &566485005
 MonoBehaviour:
@@ -193,9 +193,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "You wake up from a heavy night, drentched in sweat. It's gone, it's gone
-    it's gone. HE took it. He stole it. \"It was ours\". Mummering to yourself you
-    pack your backpack and venture out. \n\nHe must pay"
+  m_Text: "One day ou wake up from a heavy night, drentched in sweat. It's gone,
+    it's gone it's gone. HE took it. He stole it. \"It was ours\". Mummering to yourself
+    you pack your backpack and venture out. \n\nHe must pay\n\n\n\n\n\n\nPress \"space\"
+    to continue"
 --- !u!222 &566485006
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -215,6 +216,7 @@ GameObject:
   - component: {fileID: 831031667}
   - component: {fileID: 831031666}
   - component: {fileID: 831031665}
+  - component: {fileID: 831031668}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -287,6 +289,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &831031668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831031664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5fb63e3e923373469ce097bf7e30a31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &980361773
 GameObject:
   m_ObjectHideFlags: 0
