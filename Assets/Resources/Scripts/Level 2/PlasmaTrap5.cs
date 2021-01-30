@@ -9,8 +9,8 @@ public class PlasmaTrap5 : MonoBehaviour
     public GameObject lightbeam;
     Vector2 originalPos;
     private Vector2 offset;
-    private float countdown = 2;
-    private float delay = 2;
+    private float countdown = 1.7f;
+    private float delay = 1.7f;
     private bool readyBool = false;
     private bool shoot = false;
     private bool hide = false;
@@ -47,7 +47,7 @@ public class PlasmaTrap5 : MonoBehaviour
         if (shoot)
         {
             Instantiate(lightbeam, new Vector2(4.2f, 0), Quaternion.Euler(0, 0, 0));
-            countdown = 2;
+            countdown = 1.7f;
             hide = true;
         }
 
@@ -61,16 +61,18 @@ public class PlasmaTrap5 : MonoBehaviour
         if (delay <= 0)
         {
             hide = false;
-            delay = 2;
+            delay = 1.7f;
         }
 
         if (clock > 7 && clock < 8) //first trigger
             readyBool = true;
         if (clock > 15 && clock < 16) //second trigger
             readyBool = true;
-        if (clock > 40 && clock < 41) //third trigger
+        if (clock > 38 && clock < 39) //third trigger
             readyBool = true;
-        if (clock > 47.5f && clock < 49) //fourth trigger
+        if (clock > 45 && clock < 46) //fourth trigger
+            readyBool = true;
+        if (clock > 58.2 && clock < 59.2) //fourth trigger
             readyBool = true;
         if (clock > 86 && clock < 87) //fifth trigger
             readyBool = true;
