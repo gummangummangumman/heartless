@@ -9,13 +9,13 @@ public class Hero : MonoBehaviour
     public Boss boss;
 
     private bool invincible = false;
-    private bool isAttacking = false;
+    private Animator animator;
 
-    private float attackTime = 1;  //time to wait between each attacks in seconds.
+    private float attackTime = 0.5588235f;  //time to wait between each attacks in seconds.
 
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -25,7 +25,7 @@ public class Hero : MonoBehaviour
 
     void ListenForKeyboardInputs()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && !isAttacking)
+        if(Input.GetKeyDown(KeyCode.Space) && !animator.GetBool("isAttacking"))
         {
             StartCoroutine(Attack());
         }
@@ -34,16 +34,14 @@ public class Hero : MonoBehaviour
 
     private IEnumerator Attack()
     {
-        isAttacking = true;
-
-        GetComponent<Animator>().Play("Hero_attack");
+        animator.SetBool("isAttacking", true);
         
         if (boss)
             boss.Attack(damage);
 
         yield return new WaitForSeconds(attackTime);
 
-        isAttacking = false;
+        animator.SetBool("isAttacking", false);
     }
 
     void OnTriggerEnter2D(Collider2D other)
