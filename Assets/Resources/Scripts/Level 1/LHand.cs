@@ -5,14 +5,14 @@ using UnityEngine;
 public class LHand : MonoBehaviour
 {
     private float clock;
-    private float raiseSpeed = 3;
-    private float resetSpeed = 1f;
+    private float raiseSpeed = 4;
+    private float resetSpeed = 1.5f;
     private float dropSpeed = 14;
     Vector2 originalPos;
     private Vector2 Raiseoffset;
     private Vector2 Dropoffset;
     private bool attack = false;
-    private float cooldown = 2.5f;
+    private float cooldown = 1.8f;
     private bool cooldownBool = false;
 
     void raise()
@@ -51,10 +51,10 @@ public class LHand : MonoBehaviour
             drop();
         }
 
-        if (cooldown <= -3)
+        if (cooldown <= -2.3f)
         {
             cooldownBool = false;
-            cooldown = 2.5f;
+            cooldown = 1.8f;
         }
 
         if (!cooldownBool)
@@ -63,7 +63,8 @@ public class LHand : MonoBehaviour
         }
 
 
-
+        if (clock > 34 && clock < 35)   //First trigger
+            attack = true;
         if (clock > 41 && clock < 42)   //First trigger
             attack = true;
         if (clock > 49.5f && clock < 50.5f)   //First trigger
