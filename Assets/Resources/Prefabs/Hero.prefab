@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7332420435633489072}
   - component: {fileID: -8909019087191266658}
   - component: {fileID: 3031839856976805373}
+  - component: {fileID: 3665098898096082828}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Untagged
@@ -100,7 +101,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.018464714}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -111,7 +112,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.22, y: 0.2586394}
+  m_Size: {x: 0.1672437, y: 0.22170997}
   m_EdgeRadius: 0
 --- !u!50 &7332420435633489074
 Rigidbody2D:
@@ -181,3 +182,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &3665098898096082828
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7332420435633489075}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.19}
+  serializedVersion: 2
+  m_Radius: 0.06956467

@@ -5,9 +5,11 @@ public class PauseUI : MonoBehaviour
 {
 
     private bool paused = false;
+    AudioSource audioSource;
 
     void Start()
     {
+        audioSource = GameObject.Find("SoundManager").GetComponent<AudioSource>();
         //force unpaused mode
         paused = true;
         TogglePauseUI();
@@ -36,6 +38,8 @@ public class PauseUI : MonoBehaviour
                 child.gameObject.SetActive(false);
             }
             Time.timeScale = 1;
+            if(audioSource)
+                audioSource.UnPause();
             paused = false;
         }
         else
@@ -46,6 +50,8 @@ public class PauseUI : MonoBehaviour
                 child.gameObject.SetActive(true);
             }
             Time.timeScale = 0;
+            if(audioSource)
+                audioSource.Pause();
             paused = true;
         }
     }

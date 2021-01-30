@@ -2,17 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
+
+    public Button secondLevelButton;
+
     void Start()
     {
+        Time.timeScale = 1;
         OpenSubmenu("Main");
+        if (GameObject.Find("ProgressTracker").GetComponent<ProgressTracker>().hasBeatLevel1())
+            secondLevelButton.interactable = true;
     }
 
-    public void StartGame()
+    public void StartLevel(int scene)
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(scene);
     }
 
     public void ExitGame()

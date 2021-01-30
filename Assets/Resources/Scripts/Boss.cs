@@ -50,6 +50,7 @@ public class Boss : MonoBehaviour
     {
         Time.timeScale = 0.2f;
         hero.MakeInvincible();
+        GameObject.Find("ProgressTracker").GetComponent<ProgressTracker>().BeatLevel1();
         gameOverUI.Show(true);
         Destroy(gameObject);
     }
