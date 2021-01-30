@@ -16,9 +16,9 @@ public class ShootingEye : MonoBehaviour
     {
         Instantiate(Projectile, transform.position, transform.rotation);
         if (clock < 70)
-            shootdelay = 1;
+            shootdelay = 0.85f;
         else
-            shootdelay = 0.7f;
+            shootdelay = 0.65f;
     }
 
     void Update()
