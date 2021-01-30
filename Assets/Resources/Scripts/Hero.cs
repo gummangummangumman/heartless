@@ -9,6 +9,9 @@ public class Hero : MonoBehaviour
     public Boss boss;
 
     private bool invincible = false;
+    private bool isAttacking = false;
+
+    private float attackTime = 2;  //time to wait between each attacks in seconds.
 
     void Start()
     {
@@ -22,18 +25,23 @@ public class Hero : MonoBehaviour
 
     void ListenForKeyboardInputs()
     {
-        if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && !isAttacking)
         {
-            Attack();
+            StartCoroutine(Attack());
         }
     }
 
 
-    void Attack()
+    private IEnumerator Attack()
     {
+        isAttacking = true;
         if(boss)
             boss.Attack(damage);
-        //TODO cooldown
+        
+
+        yield return new WaitForSeconds(attackTime);
+        
+        isAttacking = false;
     }
 
     void OnTriggerEnter2D(Collider2D other)
