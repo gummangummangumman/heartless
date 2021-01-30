@@ -9,8 +9,8 @@ public class PlasmaTrap1 : MonoBehaviour
     public GameObject lightbeam;
     Vector2 originalPos;
     private Vector2 offset;
-    private float countdown = 1.4f;
-    private float delay = 1.4f;
+    private float countdown = 2;
+    private float delay = 2;
     private bool readyBool = false;
     private bool shoot = false;
     private bool hide = false;
