@@ -6,6 +6,7 @@ public class Boss : MonoBehaviour
 {
     public int hp;
     public Hero hero;
+    public GameUI gameUI;
     public GameOverUI gameOverUI;
 
     private bool playerIsInsideHitBox = false;
@@ -39,7 +40,7 @@ public class Boss : MonoBehaviour
             return;
 
         hp -= damage;
-        print("hp left: " + hp);
+        gameUI.updateHP(hp);
         if (hp <= 0)
         {
             Die();
