@@ -75,7 +75,7 @@ public class SpikeAnimation4 : MonoBehaviour
     private void Start()
     {
         originalPosition = transform.position;
-        lowerOffset = Vector2.down * 0.4f;
+        lowerOffset = Vector2.down * 0.7f;
         dropOffset = Vector2.down * 14;
     }
 
