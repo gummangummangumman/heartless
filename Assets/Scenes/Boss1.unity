@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 269229939}
   - component: {fileID: 269229938}
   - component: {fileID: 269229937}
-  - component: {fileID: 269229936}
   - component: {fileID: 269229935}
   m_Layer: 0
   m_Name: Spike 2
@@ -153,31 +152,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 269229934}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 869e8f1c574d6ad4091959c5806f7c0b, type: 3}
+  m_Script: {fileID: 11500000, guid: befcbca25208b9542a17a983335633e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lowerOffset: {x: 0, y: 0}
   dropOffset: {x: 0, y: 0}
   dropTimerBool: 0
---- !u!95 &269229936
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269229934}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 12f79255678533043b3fd576ae762156, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!65 &269229937
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -254,6 +234,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &377136148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 377136150}
+  - component: {fileID: 377136149}
+  m_Layer: 0
+  m_Name: Clock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &377136149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377136148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81fc3783b01e89b4fa6ca8186beeca8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timestamp: 0
+--- !u!4 &377136150
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377136148}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5477273, y: 1.9951209, z: -7.7213783}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &406491277
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,7 +308,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 406491277}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 869e8f1c574d6ad4091959c5806f7c0b, type: 3}
+  m_Script: {fileID: 11500000, guid: cd968b0167f3e53469b6e2548e0f5b7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lowerOffset: {x: 0, y: 0}
@@ -493,6 +517,7 @@ GameObject:
   - component: {fileID: 709548738}
   - component: {fileID: 709548737}
   - component: {fileID: 709548735}
+  - component: {fileID: 709548736}
   m_Layer: 0
   m_Name: Spike 5
   m_TagString: Untagged
@@ -519,6 +544,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &709548736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709548734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dfc5dcd14ac4ba48b0c5b75bee2aa9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lowerOffset: {x: 0, y: 0}
+  dropOffset: {x: 0, y: 0}
+  dropTimerBool: 0
 --- !u!65 &709548737
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -976,6 +1016,7 @@ GameObject:
   - component: {fileID: 1817377749}
   - component: {fileID: 1817377748}
   - component: {fileID: 1817377746}
+  - component: {fileID: 1817377747}
   m_Layer: 0
   m_Name: Spike 4
   m_TagString: Untagged
@@ -1002,6 +1043,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1817377747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817377745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b378cfb23a3728458b9302e107b3ecf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lowerOffset: {x: 0, y: 0}
+  dropOffset: {x: 0, y: 0}
+  dropTimerBool: 0
 --- !u!65 &1817377748
 BoxCollider:
   m_ObjectHideFlags: 0

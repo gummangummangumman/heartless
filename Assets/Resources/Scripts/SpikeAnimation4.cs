@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpikeAnimation : MonoBehaviour
+public class SpikeAnimation4 : MonoBehaviour
 {
     private float speedSlow = 1;
     private float speedFast = 9;
@@ -53,7 +53,7 @@ public class SpikeAnimation : MonoBehaviour
 
         clock += Time.deltaTime;
 
-        if (clock > 8 && clock < 9)
+        if (clock > 10 && clock < 11)
         {
             lower();
         }
