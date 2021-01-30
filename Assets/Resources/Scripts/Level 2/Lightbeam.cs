@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class Lightbeam : MonoBehaviour
 {
-    private float timer = 0;
-
-    private void Update()
+    public GameObject bean;
+    private float clock;
+    void Update()
     {
-        timer += Time.deltaTime;
+        clock += Time.deltaTime;
 
-        if (timer >= 2)
-        {
-            Destroy(this);
-        }
+        if (clock >= 2)
+            Destroy(bean);
     }
 }

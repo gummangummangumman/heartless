@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlasmaTrap1 : MonoBehaviour
+public class PlasmaTrap3 : MonoBehaviour
 {
     private float clock = 0;
     private float speed = 4;
