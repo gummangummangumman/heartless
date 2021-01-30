@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class Hero : MonoBehaviour
 {
+
+    public int damage;
+    public Boss boss;
+
+    private bool invincible = false;
+
     void Start()
     {
         
@@ -25,21 +31,31 @@ public class Hero : MonoBehaviour
 
     void Attack()
     {
-        print("rawr");
+        if(boss)
+            boss.Attack(damage);
+        //TODO cooldown
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        print("collided with " + other.name);
         if (other.name.Contains("Spike"))
             Die();
     }
 
     void Die()
     {
+        if (invincible)
+            return;
+
         print("game over");
         Destroy(gameObject); //TODO animate death somehow
         Time.timeScale = 0.2f;
         GameObject.Find("DeathUI").GetComponent<DeathUI>().Show();
+    }
+
+    //useful for when having killed the boss
+    public void MakeInvincible()
+    {
+        invincible = true;
     }
 }

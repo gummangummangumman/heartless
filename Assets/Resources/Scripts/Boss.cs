@@ -5,7 +5,11 @@ using UnityEngine;
 public class Boss : MonoBehaviour
 {
     public int hp;
+    public Hero hero;
+
     private bool playerIsInsideHitBox = false;
+
+    
 
     void Start()
     {
@@ -17,12 +21,12 @@ public class Boss : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         playerIsInsideHitBox = true;
     }
-
-    private void OnCollisionExit2D(Collision2D collision)
+    
+    private void OnTriggerExit2D(Collider2D collision)
     {
         playerIsInsideHitBox = false;
     }
@@ -34,6 +38,7 @@ public class Boss : MonoBehaviour
             return;
 
         hp -= damage;
+        print("hp left: " + hp);
         if (hp <= 0)
         {
             Die();
@@ -42,6 +47,9 @@ public class Boss : MonoBehaviour
 
     void Die()
     {
+        Time.timeScale = 0.2f;
+        hero.MakeInvincible();
+        //TODO pull up victory UI (?)
         Destroy(gameObject);
     }
 }
