@@ -8,7 +8,7 @@ public class HeroMovement : MonoBehaviour
     public int playerSpeed;
     public int jumpPower;
 
-    private bool isJumping = true;
+    private bool isJumping = false;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +22,11 @@ public class HeroMovement : MonoBehaviour
         ListenForKeyboardInputs();
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        isJumping = false;
+    }
+
     void ListenForKeyboardInputs()
     {
         transform.position += new Vector3(Input.GetAxis("Horizontal") * playerSpeed * Time.deltaTime, 0, 0);
@@ -32,7 +37,7 @@ public class HeroMovement : MonoBehaviour
             GetComponent<SpriteRenderer>().flipX = true;
 
 
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && !isJumping)
             Jump();
     }
 
