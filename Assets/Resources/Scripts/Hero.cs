@@ -31,7 +31,8 @@ public class Hero : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         print("collided with " + other.name);
-        Die();
+        if (other.name.Contains("Spike"))
+            Die();
     }
 
     void Die()
