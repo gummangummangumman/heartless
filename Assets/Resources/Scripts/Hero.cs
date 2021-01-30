@@ -50,7 +50,7 @@ public class Hero : MonoBehaviour
         print("game over");
         Destroy(gameObject); //TODO animate death somehow
         Time.timeScale = 0.2f;
-        GameObject.Find("DeathUI").GetComponent<DeathUI>().Show();
+        GameObject.Find("GameOverUI").GetComponent<GameOverUI>().Show(false);
     }
 
     //useful for when having killed the boss

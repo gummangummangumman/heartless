@@ -6,6 +6,7 @@ public class Boss : MonoBehaviour
 {
     public int hp;
     public Hero hero;
+    public GameOverUI gameOverUI;
 
     private bool playerIsInsideHitBox = false;
 
@@ -49,7 +50,7 @@ public class Boss : MonoBehaviour
     {
         Time.timeScale = 0.2f;
         hero.MakeInvincible();
-        //TODO pull up victory UI (?)
+        gameOverUI.Show(true);
         Destroy(gameObject);
     }
 }

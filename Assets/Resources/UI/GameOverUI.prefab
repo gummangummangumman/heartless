@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 616263875387478497}
   - component: {fileID: 6463472206313250020}
   m_Layer: 5
-  m_Name: DeathUI
+  m_Name: GameOverUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113,6 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 866598ac368fa174ba6d08630091d48e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 38741194563449857}
 --- !u!1 &616263875811171165
 GameObject:
   m_ObjectHideFlags: 0
@@ -142,8 +143,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 984761677360604261}
   - {fileID: 5737618075258388554}
+  - {fileID: 984761677360604261}
   m_Father: {fileID: 616263875387478526}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -301,7 +302,7 @@ RectTransform:
   m_Children:
   - {fileID: 984761677077597443}
   m_Father: {fileID: 616263875811171164}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -432,7 +433,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 616263875811171164}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

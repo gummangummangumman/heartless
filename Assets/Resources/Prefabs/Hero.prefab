@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7332420435633489086}
   - component: {fileID: 7332420435633489087}
-  - component: {fileID: 7332420435633489072}
   - component: {fileID: 7332420435633489073}
   - component: {fileID: 7332420435633489074}
+  - component: {fileID: 7332420435633489072}
   - component: {fileID: -8909019087191266658}
   m_Layer: 0
   m_Name: Hero
@@ -86,20 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7332420435633489072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7332420435633489075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 478032784b8351b41a86c6eb6f25b159, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerSpeed: 10
-  jumpPower: 500
 --- !u!61 &7332420435633489073
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -147,6 +133,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &7332420435633489072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7332420435633489075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 478032784b8351b41a86c6eb6f25b159, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSpeed: 10
+  jumpPower: 500
 --- !u!114 &-8909019087191266658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,3 +159,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24564310b8b0c2348b5aad04c3e67856, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
+  boss: {fileID: 0}

@@ -1,8 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class DeathUI : MonoBehaviour
+
+public class GameOverUI : MonoBehaviour
 {
+
+    public Text text;
+
     void Start()
     {
         foreach (Transform child in transform)
@@ -11,11 +16,20 @@ public class DeathUI : MonoBehaviour
         }
     }
 
-    public void Show()
+    public void Show(bool success)
     {
         foreach (Transform child in transform)
         {
             child.gameObject.SetActive(true);
+        }
+
+        if (success)
+        {
+            text.text = "Success!";
+        }
+        else
+        {
+            text.text = "Game over";
         }
     }
 
