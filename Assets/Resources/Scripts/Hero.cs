@@ -11,7 +11,7 @@ public class Hero : MonoBehaviour
     private bool invincible = false;
     private bool isAttacking = false;
 
-    private float attackTime = 2;  //time to wait between each attacks in seconds.
+    private float attackTime = 1;  //time to wait between each attacks in seconds.
 
     void Start()
     {
@@ -35,12 +35,14 @@ public class Hero : MonoBehaviour
     private IEnumerator Attack()
     {
         isAttacking = true;
-        if(boss)
-            boss.Attack(damage);
+
+        GetComponent<Animator>().Play("Hero_attack");
         
+        if (boss)
+            boss.Attack(damage);
 
         yield return new WaitForSeconds(attackTime);
-        
+
         isAttacking = false;
     }
 
