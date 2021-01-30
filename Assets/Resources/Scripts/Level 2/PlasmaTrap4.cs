@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlasmaTrap4 : MonoBehaviour
 {
     private float clock = 0;
-    private float speed = 4;
+    private float speed = 6;
     public GameObject lightbeam;
     Vector2 originalPos;
     private Vector2 offset;
@@ -25,7 +25,7 @@ public class PlasmaTrap4 : MonoBehaviour
     void Start()
     {
         originalPos = transform.position;
-        offset = Vector2.up * 0.3f;
+        offset = Vector2.up * 0.8f;
     }
 
     void Update()
