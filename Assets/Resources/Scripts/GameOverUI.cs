@@ -35,6 +35,25 @@ public class GameOverUI : MonoBehaviour
 
     public void QuitToMainMenu()
     {
-        SceneManager.LoadScene(0);
+        if (text.text == "Game over")
+        {
+            SceneManager.LoadScene(0);
+            return;
+        }
+
+        switch (SceneManager.GetActiveScene().buildIndex)
+        {
+            case 1:
+                SceneManager.LoadScene(3);
+                break;
+
+            case 2:
+                SceneManager.LoadScene(4);
+                break;
+
+            default:
+                SceneManager.LoadScene(0);
+                break;
+        }        
     }
 }
