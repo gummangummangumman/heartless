@@ -8,19 +8,31 @@ public class Menu : MonoBehaviour
 {
 
     public Button secondLevelButton;
+    public Slider volumeSlider;
+
+    private ProgressTracker progressTracker;
 
     void Start()
     {
+        progressTracker = GameObject.Find("ProgressTracker").GetComponent<ProgressTracker>();
+        volumeSlider.value = progressTracker.GetVolume();
         Time.timeScale = 1;
         OpenSubmenu("Main");
-        if (GameObject.Find("ProgressTracker").GetComponent<ProgressTracker>().hasBeatLevel1())
+        if (progressTracker.HasBeatLevel1())
             secondLevelButton.interactable = true;
+    }
+
+    public void UpdateVolume()
+    {
+        progressTracker.SetVolume(volumeSlider.value);
     }
 
     public void StartLevel(int scene)
     {
         SceneManager.LoadScene(scene);
     }
+
+    
 
     public void ExitGame()
     {
