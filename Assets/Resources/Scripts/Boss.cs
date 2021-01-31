@@ -11,8 +11,6 @@ public class Boss : MonoBehaviour
 
     private bool playerIsInsideHitBox = false;
 
-    
-
     void Start()
     {
         

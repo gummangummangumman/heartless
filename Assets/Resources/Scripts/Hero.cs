@@ -7,6 +7,8 @@ public class Hero : MonoBehaviour
 
     public int damage;
     public Boss boss;
+    public RightEye righteye;
+    public LeftEye lefteye;
 
     private bool invincible = false;
     private Animator animator;
@@ -38,6 +40,12 @@ public class Hero : MonoBehaviour
         
         if (boss)
             boss.Attack(damage);
+
+        if (righteye)
+            righteye.Attack(damage);
+
+        if (lefteye)
+            lefteye.Attack(damage);
 
         yield return new WaitForSeconds(attackTime);
 
