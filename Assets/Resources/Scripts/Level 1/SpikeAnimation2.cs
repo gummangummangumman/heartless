@@ -117,29 +117,30 @@ public class SpikeAnimation2 : MonoBehaviour
 
         if (clock > 27 && clock < 28)   //first trigger
         {
-          //  customTimerBool4 = true;
+            lowerBool = true;
+        }
+
+        if (clock > 33 && clock < 34)   //first trigger
+        {
             lowerBool = true;
         }
 
         if (clock > 54 && clock < 55)   //second trigger
             lowerBool = true;
 
-        if (clock > 65.3 && clock < 66.3)   //third trigger
+        if (clock > 64.3 && clock < 65.3)   //third trigger
         {
             customTimerBool2 = true;
             lowerBool = true;
         }
 
-        if (clock > 78 && clock < 79)   //fourth trigger
+        if (clock > 75.9f && clock < 76.9f)   //fourth trigger
         {
             customTimerBool3 = true;
             lowerBool = true;
         }
 
-        if (clock > 86 && clock < 87)   //fithx trigger
-            lowerBool = true;
-
-        if (clock > 96 && clock < 97)   //fourth trigger
+        if (clock > 83 && clock < 84)   //sixth trigger
             lowerBool = true;
     }
 }

@@ -78,16 +78,11 @@ public class LHand : MonoBehaviour
             attack = true;
         if (clock > 56 && clock < 57)   //Second trigger
             attack = true;
-        if (clock > 68 && clock < 69)   //Third trigger
+        if (clock > 67 && clock < 68)   //Third trigger
             attack = true;
         if (clock > 78 && clock < 79)   //Third trigger
             attack = true;
-
-        //if (clock > 84 && clock < 85)   //Fourth trigger
-        //  attack = true;
-        if (clock > 88 && clock < 89)   //Fifth trigger
-            attack = true;
-        if (clock > 95 && clock < 96)   //Sixth trigger
+        if (clock > 82 && clock < 83)   //Fourth trigger
             attack = true;
     }
 }
