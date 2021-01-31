@@ -67,6 +67,9 @@ public class LHand : MonoBehaviour
         }
 
 
+
+        if (clock > 7 && clock < 8)   //First trigger
+            attack = true;
         if (clock > 34 && clock < 35)   //First trigger
             attack = true;
         if (clock > 41 && clock < 42)   //First trigger

@@ -5,17 +5,17 @@ using UnityEngine;
 public class SpikeAnimation5 : MonoBehaviour
 {
     private float speedSlow = 2;
-    private float speedFast = 15;
+    private float speedFast = 18;
     Vector2 originalPosition;
     private float clock = 0;
     public Vector2 lowerOffset;
     public Vector2 dropOffset;
-    private float dropTimer = 1.3f;
+    private float dropTimer = 1.1f;
     public bool dropTimerBool = false;
-    private float resetTimer = 1.4f;
+    private float resetTimer = 1f;
     private bool lowerBool = false;
 
-    private float customTimer1 = 3;
+    private float customTimer1 = 2;
     private bool customTimerBool1 = false;
     private float customTimer2 = 4;
     private bool customTimerBool2 = false;
@@ -31,8 +31,8 @@ public class SpikeAnimation5 : MonoBehaviour
         {
             transform.position = originalPosition;
             dropTimerBool = false;
-            dropTimer = 1.3f;
-            resetTimer = 1.4f;
+            dropTimer = 1.1f;
+            resetTimer = 1f;
         }
     }
 
@@ -95,23 +95,27 @@ public class SpikeAnimation5 : MonoBehaviour
         clock += Time.deltaTime;
 
 
-        if (clock > 5 && clock < 6)   //First trigger
+        if (clock > 7.5f && clock < 8.5f)   //First trigger
             lowerBool = true;
 
-        if (clock > 15 && clock < 16)   //second trigger
+        if (clock > 15.5f && clock < 16.5f)   //second trigger
             lowerBool = true;
 
-        if (clock > 20 && clock < 21)   //third trigger (need customtimer1)
+
+          if (clock > 22 && clock < 23)   //third trigger (need customtimer1)
+          {
+              customTimerBool1 = true;
+              lowerBool = true;
+          } 
+
+        if (clock > 28 && clock < 29)   //first trigger
         {
-            customTimerBool1 = true;
+          //  customTimerBool4 = true;
             lowerBool = true;
         }
 
-        if (clock > 30 && clock < 31)   //first trigger
-        {
-            customTimerBool4 = true;
+        if (clock > 40 && clock < 41)   //second trigger
             lowerBool = true;
-        }
 
         if (clock > 50 && clock < 51)   //fourth trigger
             lowerBool = true;

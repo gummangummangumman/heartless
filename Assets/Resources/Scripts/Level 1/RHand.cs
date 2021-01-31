@@ -67,7 +67,8 @@ public class RHand : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, originalPos, resetSpeed * Time.deltaTime);
         }
 
-
+        if (clock > 7 && clock < 8)   //First trigger
+            attack = true;
         if (clock > 38 && clock < 39)   //First trigger
             attack = true;
         if (clock > 45 && clock < 46)   //First trigger

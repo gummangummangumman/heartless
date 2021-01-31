@@ -428,7 +428,7 @@ PrefabInstance:
       objectReference: {fileID: 1519496094}
     - target: {fileID: -8909019087191266658, guid: 3ae0ebb2353497a4b87577658a6ecffb, type: 3}
       propertyPath: damage
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7332420435633489075, guid: 3ae0ebb2353497a4b87577658a6ecffb, type: 3}
       propertyPath: m_Name
@@ -2642,6 +2642,10 @@ PrefabInstance:
     - target: {fileID: 9194171973227585581, guid: f71894429559cc4459a771b0f98141f4, type: 3}
       propertyPath: m_Name
       value: PauseUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 9194171973227585583, guid: f71894429559cc4459a771b0f98141f4, type: 3}
+      propertyPath: m_ScaleFactor
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9194171973227585585, guid: f71894429559cc4459a771b0f98141f4, type: 3}
       propertyPath: m_Pivot.x
