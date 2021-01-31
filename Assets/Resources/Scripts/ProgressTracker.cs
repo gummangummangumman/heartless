@@ -52,7 +52,6 @@ public class ProgressTracker : MonoBehaviour
     public void SetVolume(float volume)
     {
         this.volume = volume;
-        print(volume);
         PlayerPrefs.SetFloat("volume", volume);
         PlayerPrefs.Save();
     }
