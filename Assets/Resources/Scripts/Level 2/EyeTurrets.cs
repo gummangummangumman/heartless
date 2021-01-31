@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EyeTurrets : MonoBehaviour
 {
-    private float clock = 0;
+    private float clock = -1;
     private float speed = 6;
     public GameObject LEye;
     public GameObject REye;
