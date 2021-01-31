@@ -5,11 +5,8 @@ using UnityEngine;
 public class PlasmaTrap2 : MonoBehaviour
 {
     private float clock = 0;
-    private float speed = 6;
     public GameObject lightbeam;
     public GameObject prebeam;
-    Vector2 originalPos;
-    private Vector2 offset;
     private float countdown = 1.7f;
     private float delay = 1.7f;
     private bool readyBool = false;
@@ -18,11 +15,6 @@ public class PlasmaTrap2 : MonoBehaviour
     private int spawnPrebeam = 0;
 
 
-    void Start()
-    {
-        originalPos = transform.position;
-        offset = Vector2.up * 1.14f;
-    }
 
     void Update()
     {
@@ -71,15 +63,21 @@ public class PlasmaTrap2 : MonoBehaviour
             readyBool = true;
         if (clock > 15 && clock < 16) //second trigger
             readyBool = true;
-        if (clock > 32 && clock < 33) //third trigger
+
+        if (clock > 31.5f && clock < 32.5f) //third trigger
             readyBool = true;
+        if (clock > 39 && clock < 40) //third trigger
+            readyBool = true;
+
         if (clock > 51 && clock < 52) //fourth trigger
             readyBool = true;
         if (clock > 55.8 && clock < 56.8) //fourth trigger
             readyBool = true;
-        if (clock > 84 && clock < 85) //fifth trigger
+        if (clock > 78 && clock < 79) //fourth trigger
             readyBool = true;
-        if (clock > 96 && clock < 97) //sixth trigger
-            readyBool = true;
+        /*  if (clock > 84 && clock < 85) //fifth trigger
+              readyBool = true;
+          if (clock > 96 && clock < 97) //sixth trigger
+              readyBool = true;*/
     }
 }

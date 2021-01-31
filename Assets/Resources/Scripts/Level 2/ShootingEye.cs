@@ -41,9 +41,15 @@ public class ShootingEye : MonoBehaviour
 
         if (clock > 20 && clock < 29)
             canshoot = true;
-        if (clock > 30 && clock < 59)
+        if (clock > 30 && clock < 39)
             canshoot = false;
-        if (clock > 60 && clock < 80)
+        if (clock > 40 && clock < 49)
             canshoot = true;
+        if (clock > 50 && clock < 68)
+            canshoot = false;
+        if (clock > 69 && clock < 76)
+            canshoot = true;
+        if (clock > 77 && clock < 81)
+            canshoot = false;
     }
 }
