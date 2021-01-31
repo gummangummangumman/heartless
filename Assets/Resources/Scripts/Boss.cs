@@ -17,6 +17,7 @@ public class Boss : MonoBehaviour
     void Start()
     {
         StartCoroutine(makeVulnerable());
+        gameUI.gameObject.SetActive(false);
     }
     
     void Update()
@@ -27,7 +28,7 @@ public class Boss : MonoBehaviour
     private IEnumerator makeVulnerable()
     {
         yield return new WaitForSeconds(invincibleTime);
-
+        gameUI.gameObject.SetActive(true);
         isInvincible = false;
     }
 
