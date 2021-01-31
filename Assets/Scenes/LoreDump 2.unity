@@ -389,10 +389,19 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\"It was his fault. His. You didnt lose it, he took it from you. He's
-    the one to blame.\" \n\nRepeating the phrase over and over again, as the ominous
-    beating becomes louder and louder with each step you take on this giant spiral
-    staircase.\n\nTo be continued..?\n\n\n\npress \"space\" to continue"
+  m_Text: 'Is there no getting it back? I can see the light of hope fading with each
+    step. We could try.. I could try fixing it. I should''ve kept it safe. I should''ve
+    fought harder. Is this how it will be? No more ''us'', only ''I''.
+
+
+
+    To
+    be continued..?
+
+
+
+
+    press "space" to continue'
 --- !u!222 &1852014442
 CanvasRenderer:
   m_ObjectHideFlags: 0
