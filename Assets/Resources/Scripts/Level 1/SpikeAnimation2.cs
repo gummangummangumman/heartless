@@ -15,7 +15,7 @@ public class SpikeAnimation2 : MonoBehaviour
     private float resetTimer = 1.4f;
     private bool lowerBool = false;
 
-    private float customTimer1 = 3;
+    private float customTimer1 = 2;
     private bool customTimerBool1 = false;
     private float customTimer2 = 4;
     private bool customTimerBool2 = false;

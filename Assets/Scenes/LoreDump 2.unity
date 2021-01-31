@@ -392,7 +392,7 @@ MonoBehaviour:
   m_Text: "\"It was his fault. His. You didnt lose it, he took it from you. He's
     the one to blame.\" \n\nRepeating the phrase over and over again, as the ominous
     beating becomes louder and louder with each step you take on this giant spiral
-    staircase.\n\n\n\n\n\npress \"space\" to continue"
+    staircase.\n\nTo be continued..?\n\n\n\npress \"space\" to continue"
 --- !u!222 &1852014442
 CanvasRenderer:
   m_ObjectHideFlags: 0

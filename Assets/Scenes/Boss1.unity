@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &189305286
 Transform:
   m_ObjectHideFlags: 0
@@ -428,7 +428,7 @@ PrefabInstance:
       objectReference: {fileID: 1519496094}
     - target: {fileID: -8909019087191266658, guid: 3ae0ebb2353497a4b87577658a6ecffb, type: 3}
       propertyPath: damage
-      value: 19
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7332420435633489075, guid: 3ae0ebb2353497a4b87577658a6ecffb, type: 3}
       propertyPath: m_Name
@@ -2813,7 +2813,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f78b1d2e18bcfef4bbbd2d77f3aa6709, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 841e93970acf8f54eb81af3b25543d1a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3011,7 +3011,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2126545115
 Transform:
   m_ObjectHideFlags: 0
