@@ -196,8 +196,8 @@ MonoBehaviour:
   m_Text: "One day he showed up, without knocking, without asking. How could he so
     bravely and boldly take it from us. It was all I ever had, gone just like that.
     I couldn't do anything. I promise i will be stronger. I promise i will be tougher.
-    \nHe took it from us,\nhe stole it from us.\n\n\nHe must pay\n\n\n\n\n\n\nPress
-    \"space\" to continue"
+    \nHe took it from us,\nhe stole it from us.\n\n\nHe must pay\n\n\n\nPress \"space\"
+    to continue"
 --- !u!222 &566485006
 CanvasRenderer:
   m_ObjectHideFlags: 0

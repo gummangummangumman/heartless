@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlasmaTrap3 : MonoBehaviour
 {
-    private float clock = -1;
+    private float clock = -1.5f;
     public GameObject lightbeam;
     public GameObject prebeam;
     private float countdown = 1.7f;
@@ -75,7 +75,7 @@ public class PlasmaTrap3 : MonoBehaviour
             readyBool = true;
         if (clock > 64 && clock < 65) //fourth trigger
             readyBool = true;
-        if (clock > 78 && clock < 79) //fourth trigger
+        if (clock > 78.3f && clock < 79.3f) //fourth trigger
             readyBool = true;
         if (clock > 88 && clock < 89) //fourth trigger
             readyBool = true;

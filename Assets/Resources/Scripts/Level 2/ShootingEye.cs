@@ -6,7 +6,7 @@ public class ShootingEye : MonoBehaviour
 {
     public GameObject Player;
     public GameObject Projectile;
-    private float clock = -1;
+    private float clock = -1.5f;
     private bool canshoot = false;
 
     private float shootdelay = 1;

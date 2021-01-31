@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlasmaTrap5 : MonoBehaviour
 {
-    private float clock = -1;
+    private float clock = -1.5f;
     public GameObject lightbeam;
     public GameObject prebeam;
     private float countdown = 1.7f;

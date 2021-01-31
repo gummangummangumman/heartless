@@ -79,7 +79,7 @@ public class RHand : MonoBehaviour
             attack = true;
         if (clock > 67 && clock < 68)   //Third trigger
             attack = true;
-        if (clock > 78 && clock < 79)   //Third trigger
+        if (clock > 78.3f && clock < 79.3f)   //Third trigger
             attack = true;
 
         if (clock > 82 && clock < 83)   //Fourth trigger
