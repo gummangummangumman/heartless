@@ -77,9 +77,16 @@ public class PlasmaTrap5 : MonoBehaviour
             readyBool = true;
         if (clock > 78 && clock < 79) //fourth trigger
             readyBool = true;
-        /*   if (clock > 86 && clock < 87) //fifth trigger
-               readyBool = true;
-           if (clock > 98 && clock < 99) //sixth trigger
-               readyBool = true;*/
+        if (clock > 84 && clock < 85) //fourth trigger
+            readyBool = true;
+        if (clock > 88 && clock < 89) //fourth trigger
+            readyBool = true;
+        if (clock > 92 && clock < 93) //fourth trigger
+            readyBool = true;
+        if (clock > 96 && clock < 97) //fourth trigger
+            readyBool = true;
+
+        if (clock > 101 && clock < 102) //fourth trigger
+            readyBool = true;
     }
 }

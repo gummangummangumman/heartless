@@ -64,5 +64,22 @@ public class EyeTurrets : MonoBehaviour
         {
             leftactive = false;
         }
+
+        if (clock > 81 && clock < 85)   //third trigger
+        {
+            rightactive = true;
+        }
+
+        if (clock > 85 && clock < 93)   //third trigger
+        {
+            rightactive = false;
+            leftactive = true;
+        }
+
+        if (clock > 93 && clock < 100)   //third trigger
+        {
+            leftactive = false;
+            rightactive = true;
+        }
     }
 }
