@@ -9,16 +9,26 @@ public class Boss : MonoBehaviour
     public GameUI gameUI;
     public GameOverUI gameOverUI;
 
+    private float invincibleTime = 9.3f;//time in seconds boss is invincible at the beginning of the level
+
+    private bool isInvincible = true;
     private bool playerIsInsideHitBox = false;
 
     void Start()
     {
-        
+        StartCoroutine(makeVulnerable());
     }
     
     void Update()
     {
         
+    }
+
+    private IEnumerator makeVulnerable()
+    {
+        yield return new WaitForSeconds(invincibleTime);
+
+        isInvincible = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -34,7 +44,7 @@ public class Boss : MonoBehaviour
 
     public void Attack(int damage)
     {
-        if (!playerIsInsideHitBox)
+        if (!playerIsInsideHitBox || isInvincible)
             return;
 
         hp -= damage;
