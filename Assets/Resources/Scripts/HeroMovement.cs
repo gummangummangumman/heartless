@@ -43,5 +43,17 @@ public class HeroMovement : MonoBehaviour
     {
         animator.SetBool("isJumping", true);
         GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpPower));
+        StartCoroutine(checkIfCouldJump());
+    }
+
+    private IEnumerator checkIfCouldJump()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        if(GetComponent<Rigidbody2D>().velocity.y == 0)
+        {
+            // hero is standing still, probably stuck between something.
+            animator.SetBool("isJumping", false);
+        }
     }
 }
