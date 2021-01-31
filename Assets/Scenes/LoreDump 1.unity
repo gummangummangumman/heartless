@@ -193,10 +193,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "One day you wake up from a heavy night, drenched in sweat. It's gone,
-    it's gone it's gone. HE took it. He stole it. \"It was ours\". Mummering to yourself
-    you pack your backpack and venture out. \n\nHe must pay\n\n\n\n\n\n\nPress \"space\"
-    to continue"
+  m_Text: "One day he showed up, without knocking, without asking. How could he so
+    bravely and boldly take it from us. It was all I ever had, gone just like that.
+    I couldn't do anything. I promise i will be stronger. I promise i will be tougher.
+    \nHe took it from us,\nhe stole it from us.\n\n\nHe must pay\n\n\n\n\n\n\nPress
+    \"space\" to continue"
 --- !u!222 &566485006
 CanvasRenderer:
   m_ObjectHideFlags: 0
